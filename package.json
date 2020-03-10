@@ -89,7 +89,8 @@
     "lint": "eslint ./; true",
     "test": "mocha test/config/setup.js test/__tests__/**/*",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "postinstall": "cd ./node_modules/react-chartjs-2 && npm install && npm run build"
   },
   "keywords": [
     "chart",
