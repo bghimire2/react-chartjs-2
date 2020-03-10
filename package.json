@@ -77,6 +77,7 @@
   "scripts": {
     "clean": "rimraf lib es dist",
     "build:cjs": "babel src --out-dir lib",
+    "install": "babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=jsnext babel src --out-dir es",
     "build:umd": "cross-env BABEL_ENV=rollup NODE_ENV=development rollup -c -o dist/react-chartjs-2.js",
     "build:umd:min": "cross-env BABEL_ENV=rollup NODE_ENV=production rollup -c -o dist/react-chartjs-2.min.js",
